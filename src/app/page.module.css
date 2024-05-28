@@ -11,8 +11,6 @@
   width: 176px;
 }
 
-
-
 .container {
   display: flex;
   justify-content: center;
@@ -38,14 +36,15 @@
   gap: 20px;
 }
 
-.textContainer  a{
+.textContainer a {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 17.95px;
   text-align: left;
+  text-decoration: underline;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .logo {
     width: 108px;
   }
@@ -53,6 +52,4 @@
   .container {
     gap: 40px;
   }
-
 }
-
