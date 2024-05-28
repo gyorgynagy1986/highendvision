@@ -4,31 +4,11 @@ import "./globals.css";
 
 const myFont = localFont(
   {
-    src: "../../public/fonts/FuturaCyrillicMedium.ttf",
+    src: "../../public/fonts/FuturaPTLight.otf",
     display: "swap",
   },
   {
-    src: "../../public/fonts/FuturaCyrillicBold.ttf",
-    display: "swap",
-  },
-  {
-    src: "../../public/fonts/FuturaCyrillicBook.ttf",
-    display: "swap",
-  },
-  {
-    src: "../../public/fonts/FuturaCyrillicDemi.ttf",
-    display: "swap",
-  },
-  {
-    src: "../../public/fonts/FuturaCyrillicExtraBold.ttf",
-    display: "swap",
-  },
-  {
-    src: "../../public/fonts/FuturaCyrillicHeavy.ttf",
-    display: "swap",
-  },
-  {
-    src: "../../public/fonts/FuturaCyrillicLight.ttf",
+    src: "../../public/fonts/FuturaPTHevy.otf",
     display: "swap",
   },
 );

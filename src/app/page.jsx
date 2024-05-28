@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour >= 7 && hour < 22) {
+    if (hour >= 7 && hour < 21) {
       setIsDarkMode(false);
     } else {
       setIsDarkMode(true);
@@ -30,7 +30,7 @@ export default function Home() {
           <Image priority className={styles.logo} src={Logo} />
         )}
         <div className={styles.textContainer}>
-          <h1>
+          <h1 className={isDarkMode && styles.darkh1}>
             We are a boutique design agency crafting bespoke online experiences
             for exquisite clients.
           </h1>
