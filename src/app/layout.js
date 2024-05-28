@@ -4,7 +4,7 @@ import "./globals.css";
 // const futura = Futura({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Highend Vision",
+  title: "Highend Visions",
   description: "Our boutique design agency excels in delivering personalized online experiences for high-end clients, ensuring elegance and functionality.",
 };
 
