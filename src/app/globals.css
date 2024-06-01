@@ -1,3 +1,20 @@
+@import "react-toastify/dist/ReactToastify.css";
+
+
+.success-toast {
+  background: black !important;
+  color: white !important;
+}
+
+.dark-success-toast {
+  background: white !important;
+  color: black !important;
+}
+
+.Toastify__toast-icon {
+  display: none !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

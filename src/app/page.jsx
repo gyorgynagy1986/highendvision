@@ -6,18 +6,33 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Logo from "../../public/assets/logo.svg";
 import Dark from "../../public/assets/dark.svg";
+import { notifyError, notifySuccess } from "../utils/toast";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour >= 7 && hour < 21) {
+    if (hour >= 7 && hour < 20) {
       setIsDarkMode(false);
     } else {
       setIsDarkMode(true);
     }
   }, []);
+
+  const copyToClipboard = () => {
+    const email = "get@highendvisions.com";
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        notifySuccess('SZOPJADLE A FASZOM! ',5000, isDarkMode)
+      })
+      .catch(err => {
+        notifyError('Upsss Valami hiba történt ❌', 5000, isDarkMode)
+        console.error('Failed to copy: ', err);
+      });
+  };
+
 
   return (
     <main
@@ -34,9 +49,10 @@ export default function Home() {
             We are a boutique design agency crafting bespoke online experiences
             for exquisite clients.
           </h1>
-          <p className={styles.mailTo}>get@highendvisions.com</p>
+          <p onClick={copyToClipboard} className={styles.mailTo}>get@highendvisions.com</p>
         </div>
       </div>
+      <ToastContainer />
     </main>
   );
 }
