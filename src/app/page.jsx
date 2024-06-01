@@ -49,8 +49,8 @@ export default function Home() {
             We are a boutique design agency crafting bespoke online experiences
             for exquisite clients.
           </h1>
-          <p onClick={copyToClipboard} className={styles.mailTo}>get@highendvisions.com</p>
-        </div>
+          <p onClick={copyToClipboard} className={!isDarkMode ? styles.mailTo : styles.mailToNight }>get@highendvisions.com</p>
+        </div> 
       </div>
       <ToastContainer />
     </main>

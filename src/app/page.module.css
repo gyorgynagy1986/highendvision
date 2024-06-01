@@ -62,3 +62,11 @@
   cursor: url('/hovercursor.svg'), auto;
 }
 
+.mailToNight {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17.95px;
+  text-align: left;
+  text-decoration: underline;
+  cursor: url('/hovercursornight.svg'), auto;
+}
