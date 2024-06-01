@@ -34,7 +34,7 @@ export default function Home() {
             We are a boutique design agency crafting bespoke online experiences
             for exquisite clients.
           </h1>
-          <a href="mailto:get@highendvisions.com">get@highendvisions.com</a>
+          <p className={styles.mailTo}>get@highendvisions.com</p>
         </div>
       </div>
     </main>
