@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour >= 7 && hour < 23) {
+    if (hour >= 7 && hour < 24) {
       setIsDarkMode(false);
     } else {
       setIsDarkMode(true);
@@ -25,7 +25,7 @@ export default function Home() {
     const email = "get@highendvisions.com";
     navigator.clipboard.writeText(email)
       .then(() => {
-        notifySuccess('Email address copied', isDarkMode )
+        notifySuccess('Email address copied!', isDarkMode )
       })
       .catch(err => {
         notifyError('Oops, something went wrong ❌', 500, )
