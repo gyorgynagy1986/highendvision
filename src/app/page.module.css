@@ -58,7 +58,6 @@
   font-weight: 500;
   line-height: 17.95px;
   text-align: left;
-  text-decoration: underline;
   cursor: url('/hovercursor.svg'), auto;
 }
 
@@ -67,6 +66,5 @@
   font-weight: 500;
   line-height: 17.95px;
   text-align: left;
-  text-decoration: underline;
   cursor: url('/hovercursornight.svg'), auto;
 }

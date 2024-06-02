@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour >= 7 && hour < 20) {
+    if (hour >= 7 && hour < 23) {
       setIsDarkMode(false);
     } else {
       setIsDarkMode(true);
@@ -49,7 +49,7 @@ export default function Home() {
             We are a boutique design agency crafting bespoke online experiences
             for exquisite clients.
           </h1>
-          <p onClick={copyToClipboard} className={!isDarkMode ? styles.mailTo : styles.mailToNight }>get@highendvisions.com</p>
+          <a href="#" onClick={copyToClipboard} className={!isDarkMode ? styles.mailTo : styles.mailToNight }>get@highendvisions.com</a>
         </div> 
       </div>
       <ToastContainer />
