@@ -21,14 +21,14 @@ export default function Home() {
     }
   }, []);
 
-  const copyToClipboard = () => {
+  const copyToClipboard = async () => {
     const email = "get@highendvisions.com";
     navigator.clipboard.writeText(email)
       .then(() => {
-        notifySuccess('SZOPJADLE A FASZOM! ',5000, isDarkMode)
+        notifySuccess('Email address copied', isDarkMode )
       })
       .catch(err => {
-        notifyError('Upsss Valami hiba történt ❌', 5000, isDarkMode)
+        notifyError('Oops, something went wrong ❌', 500, )
         console.error('Failed to copy: ', err);
       });
   };

@@ -1,33 +1,30 @@
-import { toast } from "react-toastify";
+import { toast, Slide, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {CustomCloseButtonDark, CustomCloseButtonLight} from '@/app/components/Button'
+import { CustomCloseButtonDark, CustomCloseButtonLight } from '@/app/components/Button';
 
-
-const notifySuccess = (message, autoClose = 1000, isDarkMode = false) => 
-  toast.success(message, {
+const notifySuccess = (message, isDarkMode) => 
+  toast(message, {
     position: "top-center",
-    autoClose: autoClose,
+    autoClose: 1000,  // Auto close after 100ms
     hideProgressBar: true,
     closeOnClick: true,
     pauseOnHover: true,
     draggable: true,
-    progress: '100',
+    transition: Zoom,
     className: isDarkMode ? 'dark-success-toast' : 'success-toast', // Apply conditional class
     closeButton: isDarkMode ? <CustomCloseButtonDark /> : <CustomCloseButtonLight /> // Custom close button
- 
-});
+  });
 
 const notifyError = (message, autoClose = 1000, isDarkMode = false) => 
   toast.error(message, {
     position: "top-right",
-    autoClose: autoClose,
+    autoClose: autoClose,  // Auto close after the specified time
     hideProgressBar: true,
     closeOnClick: true,
     pauseOnHover: true,
     draggable: true,
-    progress: '100',
     className: isDarkMode ? 'dark-error-toast' : 'error-toast', // Apply conditional class
     closeButton: isDarkMode ? <CustomCloseButtonDark /> : <CustomCloseButtonLight /> // Custom close button
-});
+  });
 
 export { notifySuccess, notifyError };
