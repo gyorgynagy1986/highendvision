@@ -54,8 +54,8 @@
 }
 
 .mailTo {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 17.95px;
   text-align: left;
   text-decoration: underline;
@@ -63,8 +63,8 @@
 }
 
 .mailToNight {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 17.95px;
   text-align: left;
   text-decoration: underline;

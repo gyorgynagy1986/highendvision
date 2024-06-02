@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour >= 7 && hour < 20) {
+    if (hour >= 7 && hour < 13) {
       setIsDarkMode(false);
     } else {
       setIsDarkMode(true);
