@@ -11,7 +11,6 @@ const notifySuccess = (message, isDarkMode) =>
     pauseOnHover: true,
     draggable: true,
     transition: Zoom,
-    style: { height: '10', padding:'0' }, // Adjust the height as needed
     className: isDarkMode ? 'dark-success-toast' : 'success-toast', // Apply conditional class
     closeButton: isDarkMode ? <CustomCloseButtonDark /> : <CustomCloseButtonLight /> // Custom close button
   });
