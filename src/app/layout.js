@@ -1,4 +1,6 @@
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react"
+
 
 import "./globals.css";
 
@@ -32,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={myFont.className}>
       <body>
         {children}
+        <Analytics />
         </body>
     </html>
   );
